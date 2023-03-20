@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Javascript Dersleri</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/mediascreen.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/font/fontawesome-free-5.11.2-web/css/all.css" />
+    </head>
+    <body>
+        <!-- en dış kapsayıcı div -->
+        <div id="wrapper">
+                <!-- üst div menü ve logo vb. alanı -->
+                <header id="ust">
+                    <div class="container">
+                        <a class="logo" href="index.html">
+                            <img src="assets/img/logo.png" />
+                        </a>
+                        <!-- menü alanı -->
+                        <nav class="menu-area">
+                            <div class="logo-menu">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/img/logo.png" alt="webmektebi" width="120" height="30">
+                                </a>
+                                <img class="logo-line" src="assets/img/menu-logo-botom-line.png">
+                            </div>
+                            <ul class="nav menu" data-nav-type="accordion">
+                                <li class="nav-item nkutu" id="nkutu1">
+                                    <a href="#" class="nav-link nav-links">
+                                        <i class="fas fa-book-open"></i>    
+                                        <span>HTML-HTML5</span>
+                                        <i class="fas fa-angle-right" id="ok1"></i>
+                                    </a>
+                                    <ul class="nav-ul" id="nav-ul1" data-submenu-title="Layouts">
+                                        <li class="nav-item"><a href="index.html" class="nav-link">Html Tanıtım</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 2</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 3</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 4</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 5</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 6 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nkutu" id="nkutu2">
+                                    <a href="#" class="nav-link nav-links">
+                                        <i class="fas fa-book-open"></i>    
+                                        <span>CSS-CSS3</span>
+                                        <i class="fas fa-angle-right" id="ok2"></i>
+                                    </a>
+                                    <ul class="nav-group-sub nav-ul" id="nav-ul2" data-submenu-title="Layouts">
+                                        <li class="nav-item"><a href="#" class="nav-link">Css Giriş</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 2</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 3</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 4</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 5</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 6 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nkutu" id="nkutu3">
+                                    <a href="#" class="nav-link nav-links">
+                                        <i class="fas fa-book-open"></i>    
+                                        <span>JAVASCRİPT</span>
+                                        <i class="fas fa-angle-right" id="ok3"></i>
+                                    </a>
+                                    <ul class="nav-group-sub nav-ul" id="nav-ul3" data-submenu-title="Layouts">
+                                        <li class="nav-item"><a href="javascript.html" class="nav-link">Javascript Giriş</a></li>
+                                        <li class="nav-item"><a href="./thirtydaysofjavascript.html" class="nav-link">30DaysOfJavascript</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 3</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 4</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 5</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">Layout 6 </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="copyright">&#169;&nbsp;2019 WebMektebi all rights reserved</p>
+                        </nav> 
+                        <!-- menü alanı sonu -->
+                        <button type="button" id="menubtn" class="btn btn-info">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                    </div>    
+                </header>
+                <!-- içerik alanı div'i -->
+                <div class="container">
+                    <div class="banner text-center">
+                        <h1 title="Bol Örnek Eşliğinde Detaylı Eğitim">Bol Örnek Eşliğinde Detaylı Eğitim</h1>
+                    </div>    
+                </div>
+                <section id="orta">
+                    <div class="container">
+                        <div class="content">
+                            <h2>Javascript</h2>
+                            <ul class="list-inline nnd">
+                                <li><a href="#n">Javascript Nedir?</a></li>
+                                <li><a href="#kisa-g">Javascript'in Kısa Geçmişi</a></li>
+                                <li><a href="#nsl">Javascript Nasıl Çalışır?</a></li>
+                            </ul>
+                            <h3 id="n">Javascript Nedir?</h3>
+                            <p>JavaScript, HTML ve Web'in programlama dilidir.</p>
+                            <p>Javascript, client (istemci) tarafında (bilgisayar, tablet, telefon vs.) çalışan son derece gelişmiş bir script (senaryo) dilidir. İnternet üzerinde kullanılan script (senaryo) dilleri arasında en çok kullanılan dil olmakla birlikte birçok hazır kütüphanenin de (JQuery, AngularJS, NodeJS, ReactJS, Bootstrap çatısı vs.) temelini oluşturmaktadır. Javascript, bazı sitelerde her ne kadar bir programlama dilidir dense de bir programlama dili olarak tanımlanamaz. Çünkü Javascript kodlarıyla kendi başına çalışarak bir program yazılamaz. Javascript’in komut yapısı hemen hemen C / C++, Java veya PHP (Hypertext Preprocessor) (üstün yazı ön işlemcisi) (Personal Home Page) (kişisel ana sayfa) gibi dillerle aynıdır. Bu nedenle daha önce C / C++, Java veya PHP (Hypertext Preprocessor) (üstün yazı ön işlemcisi) (Personal Home Page) (kişisel ana sayfa) gibi dillerle uğraşanlar Javascript dilinin komut yapısını biliyor sayılır.</p>
+                            <p>Web siteleri içerisinde %100'e yakın oranda kullanılan bir dildir ve bu nedenle Javascript dili etkileşimli web sitelerinin vazgeçilmezlerindendir. Javascript, client (istemci) ile tam etkileşimi sağladığı ve HTML (Hyper Text Markup Language) (zengin metin işaretleme dili) kodları arasında gömülü olarak kullanılabildiği için son derece hızlıdır. Ayrıca Javascript kodlarını çalıştırmak için herhangi bir browser (tarayıcı) haricinde ek olarak fazladan özel bir derleyiciye ihtiyacınız yoktur. Çünkü tüm browser’lar (tarayıcılar) içerisinde bulunan Javascript Engine (Javascript motoru) sayesinde Javascript komutlarını yorumlayarak işlemleri yerine getirebilir. Javascript kodlamaları birçok özel yazılımda, game engines’da (oyun motorlarında) vs. uygulamalar içerisinde de %100 uyumlu olarak çalışabilmektedir.</p>
+                            <p>Javascript, client (istemci) ile etkileşebilmek için event (olay) yönelimli programlama metodunu kullanır. Ayrıca Javascript OOP (Object Oriented Programming) (nesne tabanlı programlama) imkânı da sunmaktadır. Event’lar (olaylar), HTML (Hyper Text Markup Language) (zengin metin işaretleme dili) gövdesinin yüklenmesi, bir butona tıklama, bir formun gönderim isteği, bir alana veya içeriğe tıklanması, zamanlamalı işlemler, bir input (giriş) alanında değişiklik, tıklama veya üzerine gelinmesi, klavye tuşlarına basılması, pencerenin boyut değişimleri vs. gibi birçok işlem olabilir. Event (olay) olduğunda, kod, fonksiyon veya sınıf tetiklenerek script (senaryo) çalışır ve işlem gerçekleşir. Bu neticede client (istemci) ile tam etkileşim sağlanmış olur.</p>
+                            <p><strong>Neden JavaScript'i Öğrenmeliyiz?</strong><br />
+                            Çünkü JavaScript, tüm web geliştiricilerinin öğrenmesi gereken 3 dilden biridir<br />
+                            &nbsp;&nbsp;&nbsp;1. Web sayfalarının içeriğini tanımlamak için HTML<br /> 
+                            &nbsp;&nbsp;&nbsp;2. Web sayfalarının düzenini belirlemek için CSS<br />
+                            &nbsp;&nbsp;&nbsp;3. Web sayfalarının davranışını programlamak için JavaScript
+                            </p>
+                            <p><strong>JavaScript İle Neler Yapılabilir?</strong><br />
+                            &nbsp;&nbsp;&nbsp;. JavaScript, HTML içeriğini değiştirebilir<br />
+                            &nbsp;&nbsp;&nbsp;. JavaScript, hem tekli hem de çift tırnak işaretlerini kabul eder<br />
+                            &nbsp;&nbsp;&nbsp;. JavaScript HTML özniteliklerini değiştirebilir<br />
+                            &nbsp;&nbsp;&nbsp;. JavaScript HTML Stillerini değiştirebilir<br /></p>
+                            <p><strong>JavaScript Kodlarını Tanımlayalım</strong><br />
+                            &nbsp;&nbsp;&nbsp;. HTML' de, JavaScript kodu <em>script</em> etiketleri arasına eklenmelidir.<br />
+                            &nbsp;&nbsp;&nbsp;. Eskiden JavaScript’e bir type özniteliği kullanılırdı: type = "text / javascript"<br />
+                            &nbsp;&nbsp;&nbsp;. Type özniteliği artık gerekli değildir.JavaScript, HTML'de varsayılan betik dilidir<br />
+                            &nbsp;&nbsp;&nbsp;. Bir JavaScript fonksiyonu, "çağrıldığında" yürütülebilen bir JavaScript kod bloğu oluşturur<br />
+                            &nbsp;&nbsp;&nbsp;. Bir HTML belgesine istediğiniz sayıda komut dosyası yerleştirebilirsiniz.<br />
+                             &nbsp;&nbsp;&nbsp;. Komut dizileri <body> ya da bir HTML sayfasının <head> bölümüne ya da her ikisine birden yerleştirilebilir.<br />
+</p>
+
+                            <p><strong>JavaScript Kodlarını Tanımlayalım</strong><br />
+                            &nbsp;&nbsp;&nbsp;. Komut dosyası derleme işlemi, ekranı yavaşlattığından, komut dosyaları <body> öğesinin altına yerleştirildiğinde, görüntüleme hızı artar.<br />
+                            &nbsp;&nbsp;&nbsp;. JavaScript Komut dosyaları harici dosyalara da yerleştirilebilir.<br />
+                            &nbsp;&nbsp;&nbsp;. <head> veya <body> fark etmez harici bir komut dosyası referansını istediğiniz gibi yerleştirebilirsiniz.<br />
+                            &nbsp;&nbsp;&nbsp;. Harici komut dosyaları <em>script</em> etiketleri içeremez.<br />
+                            &nbsp;&nbsp;&nbsp;. Harici JavaScript dosyasının Avantajları<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- HTML ile karışıklığı ayırır.<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- HTML ve JavaScript'in okunması ve bakımı daha kolay hale getirir.<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Önbelleklenmiş JavaScript dosyaları, sayfa yüklemelerini hızlandırabilir.<br />
+                             &nbsp;&nbsp;&nbsp;. Harici dosyayı bir sunucudan çekebiliriz.<br />
+</p>    
+                            <h3 id="kisa-g">Javascript'in Kısa Geçmişi</h3>
+                            <p>&nbsp;&nbsp;&nbsp;Javascript, ilk olarak o zamanlarda Netscape’te ve şimdi de Mozilla’da çalışan Brendan Eich tarafından Mayıs 1995 yılında geliştirilmiş olup, geliştirme aşamasında ilk adı Netscape’in kurucusu Marc Andreessen tarafından seçilen Mocha olmasına rağmen, Eylül 1995 tarihinde Livescript olarak değiştirildi. Sun Micro Systems'dan marka lisansı alındıktan sonra, Aralık 1995 tarihinde Netscape Navigator 2.0 Beta 3 ile birlikte piyasaya sürüldü ve ismi Javascript olarak değiştirildi. Bu, Java’nın o zamanlardaki popülerliğini kullanarak yapılan bir çeşit pazarlama hareketiydi. Javascript dili, C, Scheme, Java, Perl, Python, Self dillerinden etkilenmiş ve geliştirilmiştir. JScript, JScript.NET, Objective-J, TIScript dillerinin oluşturulması için kullanılmış ve gelişmesine yardımcı olmuştur. Javascript dilini, C dilinin web sayfalarına uyarlanmış basit sürümü olarak düşünülebilirsiniz. Javascript dili isim benzerliğine rağmen Java ile birbirinden bağımsız ve farklı dillerdir.</p>
+                            <p>&nbsp;&nbsp;&nbsp;Javascript'in isim değişikliği ile Netscape'in Java teknolojilerine (Java Applet) (Java uygulaması) destek vermesi yaklaşık olarak aynı tarihlere denk gelir. Microsoft ile Netscape'in web teknolojileri ve platformları alanında yarıştığı bir dönemde Netscape, Sun Micro Systems'ın geliştirdiği Java platformuna destek vererek dağıtık bir işletim sistemi oluşturmayı öngörüyordu. Javascript ise, Visual Basic'in yaptığı gibi, profesyonel olmayan programcıları hedefleyen daha basit bir betik dili olarak düşünülmekteydi.<br />
+                            &nbsp;&nbsp;&nbsp;Microsoft, 1996 yılında Internet Explorer 3.0 ile birlikte JScript ve VBScript betik dillerini yayınladı. JScript Netscape'in Javascript'ine benzerken VBScript ise Visual Basic temelliydi ve var olan Visual Basic programcılarının kolay bir geçiş yapmasını hedefliyordu. Aynı dönemde Microsoft ilk defa CSS (Cascading Style Sheets) (basamaklı stil şablonları veya basamaklı biçim sayfaları) desteği de sağladı ancak hem CSS (Cascading Style Sheets) (basamaklı stil şablonları veya basamaklı biçim sayfaları) hem de JScript desteği Netscape'in o zamana kadar sağladıkları ile tutarlı çalışmıyordu. Bu durum web tasarımcıları ve geliştiricileri arasında bir kargaşa çıkartmış ve browser (tarayıcı) savaşlarının ilk yıllarında sitelerin altında tipik olarak görülen en iyi Internet Explorer ile izlenir ya da en iyi Netscape ile izlenir gibi logoların ve bilgilendirme metinlerinin ortaya çıkmasına neden olmuştur.<br />
+                            &nbsp;&nbsp;&nbsp;1996 yılının Kasım ayında Netscape firması Javascript'in endüstri standardı olarak belirlenmesi amacıyla Ecma International firmasına başvuruda bulunduğunu ilan etti. Bunun sonucunda standardize edilen sürüm EcmaScript olarak isimlendirildi ve 1997 yılının Haziran ayında Ecma International, Ecma-262 belirtiminin ilk sürümünü yayımladı. Haziran 1998'de ISO/IEC-16262 (International Standards Organization) (uluslararası standartlar organizasyonu) / (International Electrotechnical Commission) (uluslararası elektroteknik komisyonu) standardına uyumlu hale getirilecek değişiklikler yapılarak ikinci sürüm, Aralık 1999'da ise üçüncü sürüm yayımlandı. EcmaScript'in dördüncü sürümü üzerinde ciddi bir çalışma yapılmasına rağmen asla tamamlanamadı, ancak beşinci sürüm için önemli bir ilham kaynağı oldu. Beşinci sürüm 2009 yılının Aralık ayında yayımlandı. EcmaScript'in şu an geçerli olan son standart belirtimi, Haziran 2011 tarihinde yayımlanan 5.1 sürümüdür ve Javascript 1.8.5 tarafından desteklenmektedir. Başlangıçta sadece Netscape tarafından desteklenen dil, şimdi tüm browser’lar (tarayıcılar) tarafından desteklenmekte ve kullanılmaktadır. Javascript’in performansı, gücü ve marifetleri ilerleyen yıllarda fark edilecekti ve eşsiz bir hazine olacaktı. Günümüz teknolojilerinde özellikle web yazılımlarının bel kemiği rolünü üstlenecekti.</p>
+                            <p>
+                                <pre class="pr">
+                                <strong>JAVASCRIPT’İN DOSYA YAPISI VE GELİŞTİRİCİLERİ</strong>
+Javascript, son olarak 2009 yılında Ecma International tarafından Ecma-262 sürümü ile standartlaştırılmıştır. 
+Javascript’in geliştiricileri, dosya uzantısı, mime tipi, kod tipi, format tipi, çalışma ortamı, etkilendiği 
+diller, etkilediği diller ve sürüm bilgisi aşağıda belirtilmiştir.
+&nbsp;&nbsp;&nbsp;<b>Geliştirici</b>&nbsp;&nbsp;&nbsp;: Netscape Communications Corporation, Mozilla Foundation, Ecma International
+&nbsp;&nbsp;&nbsp;<b>Dosya uzantısı</b>&nbsp;&nbsp;&nbsp;: .js
+&nbsp;&nbsp;&nbsp;<b>MIME tipi</b>&nbsp;&nbsp;&nbsp;: text/javascript, application/javascript, application/x-javascript, 
+application/ecmascript, text/ecmascript 
+&nbsp;&nbsp;&nbsp;<b>Kod tipi</b>&nbsp;&nbsp;&nbsp;: Dinamic (dinamik)
+&nbsp;&nbsp;&nbsp;<b>Format tipi</b>&nbsp;&nbsp;&nbsp;: Scripting Language (senaryo dili)
+&nbsp;&nbsp;&nbsp;<b>Çalışma ortamı</b>&nbsp;&nbsp;&nbsp;: Client (istemci) > Browser (tarayıcı) / Server (sunucu) > (NodeJS)
+(Google Chrome, Internet Explorer, Microsoft Edge, Mozilla Firefox, Opera, Safari, Yandex Browser vs.)
+&nbsp;&nbsp;&nbsp;<b>Etkilendiği diller</b>&nbsp;&nbsp;&nbsp;: C, Scheme, Java, Perl, Python, Self
+&nbsp;&nbsp;&nbsp;<b>Etkilediği diller</b>&nbsp;&nbsp;&nbsp;: JScript, JScript.NET, Objective-J, TIScript 
+&nbsp;&nbsp;&nbsp;<b>Güncel sürüm</b>&nbsp;&nbsp;&nbsp;: 1.8.5
+&nbsp;&nbsp;&nbsp;<b>Bir önceki sürüm</b>&nbsp;&nbsp;&nbsp;: 1.8.2
+
+                                </pre>
+                            </p>
+                            <h3 id="nsl">Javascript Nasıl Çalışır?</h3>
+                            <p>Html kodlama için basit bir not defteri yeterlidir. Ayrıca html ve diğer dilleri destekleyen birçok editör mevcut(Dreamweaver,notpad ++,sublime text vb..). Bu editörlerden herhangi biri ile de kodlama yapılabilir. </p>
+                            <h6>Html hakkında önemli maddeler;</h6>
+                            <ul class="maddeler">
+                                <li>Html, Not defteri veya herhangi bir editöre yazılıp .html veya .htm uzantısıyla kaydedilir. </li>
+                                <li>Html, tag,element veya etiket denen öğelerden oluşur.</li>
+                                <li>Html öğeleri tüm tarayıcılarda içeriğin nasıl gösterileceğini sağlar.</li>
+                                <li>Tarayıcılar html etiketlerini göstermez, fakat sayfanın göstermek için bu etiketleri kullanır.</li>
+                                <li>Html kodlarının tarayıcılarda görüntülenebilmesi için ve çalışabilmesi için tarayıcılara bir tanıtma gerekiyor, bu da&nbsp;&nbsp;<span>&lt;!DOCTYPE html&gt;</span>&nbsp;&nbsp;ile  yapılır.<span>&lt;!DOCTYPE html&gt;</span> html5 bildirimidir. Önceki sürümlerde Doctype bildirimleri çok daha uzun ve karmaşıktı.</li>
+                                <li>&lt;html&gt; kodu, html sayfasının kök öğesidir ve olmazsa olmaz bir öğedir.</li>
+                                <li>&lt;head&gt; kodu, html sayfasının beyni ya da kafası gibidir. Bu öğe tüm meta öğelerinin, harici sayfaların(css,js vb.) çağrıldığı ve sayfanoın başlığının bulunduğu bir alanı kapsar.</li>
+                                <li>&lt;title&gt; kodu, html sayfasının başlığının belirtildiği öğedir.</li>
+                                <li>&lt;body&gt; kodu, html sayfasının ziyaretçi tarafından görünen kısmıdır.</li>
+                                <li>Html etiketleri çok az istisna hariç  &lt;etiket&gt;içerik&lt;/etiket&gt;  şeklinde yazılır. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- alt bölüm div'i -->
+                <footer id="alt">
+                    <div class="container">
+                        <div class="row">
+                            <section class="col-md-3 col-sm-6">
+                                <h4>Webmektebi Hakkında</h4>
+                                    <p style="font-size: 14px; line-height: 19px;">Webmektebi, web alanında öğrenmeyi ve üretmeyi seven herkesin  ihtiyaç duyabileceği,çok çeşitli kategori odaklı her türlü bilgiyi sunar!</p>
+                                    <a href="https://webmektebi.name.tr"><img class="footer-logo hidden-sm hidden-xs" alt="Webmektebi" src="assets/img/logo.png"></a>
+                            </section>
+                            <section class="col-md-2 col-sm-6">
+                                <h4>Dersler</h4>
+                                <ul class="footer-box-list">
+                                    <li><a href="#">Html-Html5</a></li>
+                                    <li><a href="#">Css-Css3</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><a href="#">Php</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">Java</a></li>
+                                    <li><a href="#">C#</a></li>
+                                </ul>
+                            </section>
+                            <section class="col-md-4 col-sm-6 text-center">
+                                <h4>Sosyal medyada biz</h4>
+                                <div class="social">
+                                    <a class="facebook" href="https://www.facebook.com/webmektebi" target="_blank"></a>
+                                    <a class="twitter" href="https://twitter.com/webmektebi" target="_blank"></a>
+                                    <a class="gplus" href="https://www.google.com/+WebmektebiThemes" target="_blank"></a>
+                                    <a class="pinterest" href="https://www.pinterest.com/webmektebi/" target="_blank"></a>
+                                </div>
+                            </section>
+                            <section class="col-md-3">
+                            </section>
+                         </div>
+                    <!-- footer copyright -->
+                        <div class="copyright-footer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><a href="mailto:t.adymn@gmail.com">t.adymn@gmail.com</a></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>© 2020 <a href="https://webmektebi.name.tr/">webmektebi.name.tr</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            <!-- footer sonu -->
+            <!-- ####################### En Üst Bölgeye Kaydırma oku ####################### -->
+            <!-- Back to top button -->
+                <a id="button"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <!-- script link alanı -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/font/fontawesome.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(
+            function(){
+                $('#menubtn').on('click', function(){
+                    $('.menu-area,#menubtn,.logo').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu1').on('click', function(){
+                    $('#nav-ul1').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu2').on('click', function(){
+                    $('#nav-ul2').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu3').on('click', function(){
+                    $('#nav-ul3').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu1').on('click', function(){
+                    $('#ok1').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu2').on('click', function(){
+                    $('#ok2').toggleClass('active');
+                });
+            });
+            $(document).ready(
+            function(){
+                $('#nkutu3').on('click', function(){
+                    $('#ok3').toggleClass('active');
+                });
+            });
+            
+            var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+        </script>
+    </body>
+</html>
